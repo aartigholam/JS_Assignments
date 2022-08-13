@@ -1,0 +1,33 @@
+<!-- // Program 4- Write a function that accepts interest, principle, and tenure and calculates EMI. -->
+
+
+<html>
+
+<body>
+
+<button onclick="emi()">Calculate EMI</button>
+
+<script type="text/javascript">
+
+let p 
+let r
+let n
+
+function emi()
+{
+	p = prompt('Enter principle');
+	r = prompt('Enter interest');
+	n = prompt('enter tenure (in years) ');
+
+ let interest = (p * r * n) / 100;
+ let total = (interest/ ( 12 * n ));
+
+
+   alert('EMI = ' + total);
+}
+
+</script>
+
+</body>
+
+</html>
