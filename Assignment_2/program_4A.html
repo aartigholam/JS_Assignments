@@ -1,0 +1,42 @@
+<!-- // Program 4- Write a function that accepts interest, principle, and tenure and calculates EMI. -->
+
+<!-- Using PNR formula : -->
+
+<html>
+
+<body>
+
+<button onclick="emi_cal()">Calculate EMI</button>
+
+<script type="text/javascript">
+
+function emi_cal()
+{
+	let p = prompt('Enter principle :');
+	let r = prompt('Enter interest :');
+	let n = prompt('Enter tenure :');
+
+ 
+
+        r = r / (12 * 100);    // one month interest
+        n = n * 12;           // one month period
+        let emi = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+	  
+   alert('EMI = ' + emi);
+}
+
+</script>
+
+</body>
+
+</html>
+
+<!-- => Values entered :
+
+Enter principle : 10000
+Enter interest : 10
+Enter tenure :
+
+=> ANS : 
+
+EMI = 461.44926337516694 -->
